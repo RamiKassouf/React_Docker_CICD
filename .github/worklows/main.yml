@@ -23,3 +23,7 @@ jobs:
 
       - name: Build the React app
         run: npm run build
+  -test: 
+    needs: build
+      -name: jest
+        run: npm test
