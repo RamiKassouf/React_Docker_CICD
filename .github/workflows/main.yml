@@ -38,8 +38,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: cd to app
-        run: cd ./app
-
       - name: Run unit tests
-        run: npm test
+        working-directory: /home/runner/work/React_Docker_CICD/React_Docker_CICD/app
+        run: npx jest
