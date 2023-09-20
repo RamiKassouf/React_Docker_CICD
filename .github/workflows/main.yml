@@ -39,5 +39,5 @@ jobs:
         run: npm install
 
       - name: Run unit tests
-        working-directory: /home/runner/work/React_Docker_CICD/React_Docker_CICD/app
-        run: npx jest
+        working-directory: ./app
+        run: echo pwd && npm test
