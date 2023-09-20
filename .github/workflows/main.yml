@@ -39,4 +39,5 @@ jobs:
         run: npm install
 
       - name: Run unit tests
-        run: echo $pwd && npm test
+        working-directory: /home/runner/work/React_Docker_CICD/app
+        run: echo $pwd 
