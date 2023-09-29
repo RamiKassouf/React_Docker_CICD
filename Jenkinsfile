@@ -4,14 +4,14 @@ pipeline {
         stage('Build') {
             steps {
                 // build the react project
-                sh 'npm install'
-                sh 'npm run build'
+                sh 'yarn install'
+                sh 'yarn build'
             }
         }
         stage('Test') {
             steps {
                 // run the tests
-                sh 'npm run test'
+                sh 'yarn test'
             }
         }
         stage('Deploy') {
