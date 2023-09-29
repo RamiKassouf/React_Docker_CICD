@@ -3,12 +3,15 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                // build the react project
+                sh 'npm install'
+                sh 'npm run build'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                // run the tests
+                sh 'npm run test'
             }
         }
         stage('Deploy') {
