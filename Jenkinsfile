@@ -14,7 +14,6 @@ pipeline {
                 sh 'yarn install' 
             }
         }
-    }
         stage('Test') {
             steps {
                 // run the tests
